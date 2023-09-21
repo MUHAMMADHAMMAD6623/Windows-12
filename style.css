@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    height: 867px;
+}
+
+body {
+    height: 867px;
+    overflow: hidden;
+}
+
+.dark-bg {
+    width: 100%;
+    height: 867px;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+}
+
+.light-bg {
+    width: 100%;
+    height: 867px;
+    display: none;
+}
+
+.taskbar {
+    opacity: 0.7;
+    background-image: linear-gradient(50deg, black, rgb(19, 19, 19), rgb(20, 20, 20), rgb(36, 36, 36), rgb(41, 41, 41));
+    height: 65px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.taskbar .logo {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 18px 18px;
+}
+
+.taskbar .left .hover {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 310px;
+    border-radius: 5px;
+}
+
+.taskbar .left .hover:hover {
+    background: rgb(161, 161, 161);
+}
+
+.taskbar .logo:hover {
+    border-radius: 6px;
+}
+
+.taskbar .logo:hover {
+    cursor: pointer;
+}
+
+.taskbar .logo .items {
+    width: 18px;
+    height: 18px;
+    background: rgb(192, 192, 192);
+}
+
+.taskbar .search input {
+    height: 35px;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding-left: 10px;
+    font-size: 0.9rem;
+    background-color: rgb(204, 204, 204);
+    opacity: 0.3;
+    border: none;
+    color: gray;
+    position: relative;
+    right: 80px;
+}
+
+.taskbar .search input::placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search .logo:hover .items {
+    background: gray;
+}
+
+.taskbar .logo #item-1 {
+    border-top-left-radius: 6px;
+}
+
+.taskbar .logo #item-2 {
+    border-top-right-radius: 6px;
+}
+
+.taskbar .logo #item-3 {
+    border-bottom-left-radius: 6px;
+}
+
+.taskbar .logo #item-4 {
+    border-bottom-right-radius: 6px;
+}
+
+.taskbar .left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.taskbar .left .search {
+    margin-left: 400px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.taskbar .apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    right: 50px;
+    border-radius: 6px;
+}
+
+.taskbar .apps:hover {
+    background: rgb(192, 192, 192);
+}
+
+.taskbar .settings {
+    display: flex;
+}
+
+.taskbar .apps .internet-explorer img {
+    width: 40px;
+    height: 40px;
+}
+
+.taskbar .apps .internet-explorer {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskbar .settings {
+    position: relative;
+    left: 210px;
+    align-items: center;
+    display: flex;
+}
+
+.taskbar .settings div {
+    margin: 0px 7px;
+}
+
+.taskbar .settings .date-time {
+    color: white;
+}
+
+.taskbar .settings .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.taskbar .settings .icons:hover {
+    background: rgb(192, 192, 192);
+}
+
+.taskbar .settings .date-time {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.taskbar .settings .date-time:hover {
+    background: rgb(192, 192, 192);
+    cursor: inherit;
+}
+
+.menu {
+    display: none;
+    width: 380px;
+    height: 500px;
+    background: rgb(184, 184, 184);
+    border-radius: 12px;
+    opacity: 1;
+    position: absolute;
+    top: calc(100% - 580px);
+    left: -170px;
+}
+.menu .theme {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 20px;
+    left: 32px;
+}
+
+.profile h2 {
+    margin-top: 43px;
+    margin-left: 55px;
+}
+
+.profile {
+    display: flex;
+}
+
+.menu hr {
+    position: relative;
+    top: 40px;
+    width: 310px;
+    left: 30px;
+}
+
+.buttons .dynamic {
+    display: flex;
+}
+
+.buttons .dynamic button {
+    top: 63px;
+    position: relative;
+    padding: 3px;
+    background: gray;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    left: 110px;
+}
+
+.buttons .static {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons .static a {
+    width: 120px;
+    position: relative;
+    top: 160px;
+    margin: 4px;
+    left: 130px;
+    background: #000;
+    color: white;
+    font-size: 19px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu:hover {
+    cursor: initial;
+}
+
+.menu .static button:hover {
+    cursor: pointer;
+}
+
+.menu hr.down {
+    position: relative;
+    top: 100px;
+}
